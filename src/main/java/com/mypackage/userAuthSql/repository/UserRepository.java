@@ -8,5 +8,7 @@ import com.mypackage.userAuthSql.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	Optional<User> findByUsernameOrEmail(String username, String email);
+	boolean existsByusername(String username);
+	boolean existsByemail(String email);
 }
 

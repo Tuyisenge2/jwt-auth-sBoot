@@ -50,8 +50,6 @@ public class JwtTokenProvider {
            //     .verifyWith((SecretKey) key())
                 .build()
                 .parseClaimsJws(token)
- //               .parseSignedClaims(token)
-          //      .getPayload()
                  .getBody()  
                  .getSubject();
     }
