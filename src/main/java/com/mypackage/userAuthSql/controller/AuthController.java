@@ -24,7 +24,7 @@ public class AuthController {
     }
      @GetMapping("/login")
     public String home() {
-        return "api v1 home ";
+        return "api v1 home end points  ";
     }
     // Build Login REST API
     @PostMapping("/login")
