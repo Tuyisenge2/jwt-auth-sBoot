@@ -22,7 +22,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 
         // Create a custom error message
-        String message = "{\"error\": \"Unauthorized\", \"message\": \"" + authException.getMessage() + "\"}";
+        String message = "{\"error\": \"Unauthorize\", \"message\": \"" + authException.getMessage() + "\"}";
 
         // Write the custom message to the response body
         response.getWriter().write(message);
