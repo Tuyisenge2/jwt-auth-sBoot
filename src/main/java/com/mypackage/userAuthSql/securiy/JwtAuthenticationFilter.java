@@ -17,7 +17,7 @@ import com.mypackage.userAuthSql.service.JwtTokenProvider;
 
 import java.io.IOException;
 
-// Execute Before Executing Spring Security Filters
+// Execute Before Executing Spring Security Filters in filter
 // Validate the JWT Token and Provides user details to Spring Security for Authentication
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
