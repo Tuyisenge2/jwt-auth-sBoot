@@ -19,6 +19,6 @@ public class AdminController {
     @PreAuthorize("hasRole('USER')")
     @GetMapping("/user")
     public ResponseEntity<String> helloUser(){
-        return ResponseEntity.ok("Hello User");
+        return ResponseEntity.ok("hello user welcome");
     }
 }
